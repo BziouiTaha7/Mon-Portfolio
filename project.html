@@ -1,82 +1,119 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X_UA-Compatible"content="IE=ege">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BZIOUI</title>
 
-    <!--box icons-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
-    <!--header design-->
+
     <header class="header">
         <a href="index.html" class="btn">Portfolio</a>
-        <i class='bx bx-menu' id="menu-icon" onclick="clickedNv()"></i>
+        <i class="bx bx-menu" id="menu-icon" onclick="clickedNv()"></i>
         <nav class="navbar" id="nv">
-        <nav class="navbar">
-        <a href="index.html" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-</nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#education">Education</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
     </header>
-    <!-- home section design -->
-    <section class="home" id="home">
-        <div class="home-content">
-  <!-- education section design -->
-  <section class="education" id="education" >
-    <h2 class="heading">My <span>Journey</span></h2>
-    <div class="education-row">
-        <div class="education-column" >
-            <center><i><h3 class="title"> Part :Web-(Frontend)</h3></i></center>
-            <div class="education-box">
-                <div class="education-content">
-                    <div class="content">
-                        <center><h3> Project N°1</h3></center>
-                        <center><a href="https://bzioui-project.vercel.app/"><img src="site.jpg"  style="width: 80%; height: 30%;"></a></center><br>
-                    </div>
-                </div>
 
-                <div class="education-content">
-                    <div class="content">
-                        <center><h3>Project N°2 </h3></center>
-                        <center><a href="https://watch-now-sooty.vercel.app/"><img src="site 3.png" style="width: 80%; height: 30%;"></a></center>
+    <section class="education" id="education">
+        <h2 class="heading">Featured <span>Project</span></h2>
+        <section class="projects">
+            <div class="project">
+                <div class="project-img">
+                    <img src="sitette.jpg" alt="Streamlit App Screenshot" />
+                   
+                </div>
+                <div class="project-desc">
+                    <h3>Data Visualization App</h3>
+                    <p>
+                        An interactive web application built with Streamlit that enables users to upload CSV/Excel files and instantly generate dynamic visualizations. The app supports multiple chart types (bar, line, scatter, pie), offers filtering options, and helps non-technical
+                        users explore datasets easily.
+                    </p>
+                    <p><b>Technologies:</b> Python · Streamlit · Pandas · Matplotlib</p>
+                    <div class="project-icons">
+                        <i class="bx bxl-github"></i>
+                        <a href="https://github.com/bziouitaha7/streamlit_app" target="_blank">GitHub</a>
+                        <i class="bx bx-link-external"></i>
+                        <a href="https://pythonprojets.streamlit.app" target="_blank">Live Demo</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="education-column">
-            <center><i><h3 class="title">Part : Multimedia</h3></i></center>
-            <div class="education-box">
-                <div class="education-content">
-                    <div class="content"> 
-                        <center><h3>LOGO</h3></center>
-                        <center><img src="site 2.jpg" style="width: 700;height: 20%;"></center>
-                    </div>
+            <div class="project">
+                <div class="project-img">
+                    <img src="siteweb.jpg" alt="iSchool Platform Screenshot" />
+                   
                 </div>
+                <div class="project-desc">
+                    <h3>iSchool – Academic Management Platform</h3>
+                    <p>
+ A complete web platform designed to modernize and simplify academic administration for schools and universities. 
+      It provides powerful tools for administrators (user management, dashboards, real-time statistics), 
+      intuitive features for teachers (course creation, grading, attendance tracking), 
+      and a personal space for students (grades, schedules, course materials).
 
-                <div class="education-content">
-                    <div class="content">
-                        <center><h3>Poster N°1</h3></center>
-                        <center><img src="mimis.jpg" style="width: 700;height: 20%;"></center><br><br>
-                        <center><h3>Poster N°2</h3></center><br>
-                        <center><img src="infirmier.jpg" style="width: 700;height: 20%;"></center>
+                    </p>
+                    <p><b>Technologies:</b> HTML · CSS · JavaScript · PHP · SQL</p>
+                    <div class="project-icons">
+                        <i class="bx bxl-github"></i>
+                        <a href="https://github.com/BziouiTaha7/ischool-project" target="_blank">GitHub</a>
+                        <i class="bx bx-link-external"></i>
+                        <a href="video.mp4" target="_blank">Live Demo</a>
                     </div>
                 </div>
-                <div class="education-content">
-                    <div class="content">
-                        <center><h3>Business Card</h3></center>
-                        <center><img src="log2.jpg" style="width: 700;height: 20%;"></center>
-                    </div>
-                </div>
-                </div> 
             </div>
-            </div> 
-    </div>
- </section>
- <script src="https://unpkg.com/scrollreveal"></script>
-     <script src="js.js"></script>
+
+
+            <div class="project">
+                <div class="project-img">
+                    <img src="site.jpg" alt="Project 1">
+                </div>
+                <div class="project-desc">
+                    <h3>E-learning Platform – Digital Marketing & Web Development</h3>
+                    <p>
+                        An online learning platform that centralizes structured courses in digital marketing and web development. The platform provides interactive content (exercises, practical projects, real case studies) and fosters collaborative learning through an active
+                        community. Fully accessible online, it is designed to meet current market needs by delivering modern and in-demand skills.
+                    </p>
+                    <p><b>Technologies:</b> HTML · CSS · JavaScript</p>
+                    <div class="project-icons">
+                        <i class="bx bxl-github"></i>
+                        <a href="https://github.com/BziouiTaha7/bzioui.project" target="_blank">GitHub</a>
+                        <i class="bx bx-link-external"></i>
+                        <a href="https://bzioui-project.vercel.app/" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+                        <div class="project">
+                <div class="project-img">
+                    <img src="site 3.png" alt="Project 1">
+                </div>
+                <div class="project-desc">
+                   <h3>IPTV Landing Page – Subscription Plans & Customer Support</h3>
+                    <p>
+                        An IPTV landing page designed to present subscription plans, features, and customer support in a clear and engaging way. The page includes a hero section with a free trial CTA, interactive subscription options, an FAQ section, and WhatsApp support. Its dark-mode inspired, “window-style” card design ensures a modern look, fully responsive across devices.
+                    <p><b>Technologies:</b> HTML · CSS · JavaScript</p>
+                    <div class="project-icons">
+                        <i class="bx bxl-github"></i>
+                        <a href="https://github.com/BziouiTaha7/watch-now" target="_blank">GitHub</a>
+                        <i class="bx bx-link-external"></i>
+                        <a href="https://watch-now-sooty.vercel.app/" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="js.js"></script>
+</body>
+
+</html>
