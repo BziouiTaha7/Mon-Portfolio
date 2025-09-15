@@ -701,25 +701,42 @@ span {
         display: block;
     }
     .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 3%;
-        background: var(--bg-color);
-        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-        display: block;
-        opacity: 0;
+  position: fixed;
+  top: 0;
+  right: -100%; /* cachée */
+  width: 250px;
+  height: 100vh;
+  background: #1F242D;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  transition: right 0.3s ease;
+  z-index: 1000; 
     }
-    .navbar.active {
-        opacity: 1;
-    }
-    .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
+.navbar a {
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* active => visible */
+.navbar.active {
+  right: 0;
+}
+
+/* icônes sociales */
+.social-icons {
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 2000; /* toujours au-dessus du menu */
+}
+
+.social-icons a {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #00eeff;
+}
     .home {
         flex-direction: column;
     }
@@ -754,6 +771,16 @@ span {
     }
     .education-content .content p {
         font-size: 1.3rem;
+    }
+    .projects , .project-icons{
+        position: relative;
+          z-index: 900; /* toujours au-dessus du menu */
+
+    }
+    .project-icons a{
+        position: relative;
+          z-index: 1100; /* toujours au-dessus du menu */
+
     }
 }
 
