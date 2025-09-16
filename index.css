@@ -604,6 +604,7 @@ span {
 }
 
 
+
 /* Responsive for Mobile */
 
 @media (max-width: 768px) {
@@ -662,6 +663,33 @@ span {
   .header .sticky {
     border-bottom: 0.1rem solid rgb(0, 0, 0, 0.2);
 }
+  #menu-icon {
+    display: block; /* assure la visibilité */
+    font-size: 3.6rem;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 4000;           /* bien au-dessus du menu */
+    position: fixed;         /* reste visible quand nav ouverte */
+    top: 1.8rem;
+    right: 2.2rem;
+    background: transparent;
+    padding: 0.25rem;
+    border-radius: 6px;
+    transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+  }
+
+  /* Apparence quand l'icône est en mode 'fermer' (classe bx-x ajoutée) */
+  #menu-icon.bx-x {
+    background: rgba(14,239,255,0.08);
+    box-shadow: 0 0 12px rgba(14,239,255,0.08);
+    color: var(--main-color);
+    transform: rotate(0deg);
+  }
+
+  /* s'assurer que la navbar est en dessous de l'icône */
+  .navbar {
+    z-index: 3000;
+  }
 
   
 }
