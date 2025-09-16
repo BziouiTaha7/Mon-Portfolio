@@ -25,6 +25,7 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    
 }
 
 section {
@@ -42,7 +43,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .header .sticky {
@@ -204,13 +205,15 @@ span {
     box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
     color: var(--second-bg-color);
-    letter-spacing: 0.1rem;
+    /* letter-spacing: 0.1rem; */
     font-weight: 600;
+    
 }
 
 .btn:hover {
     box-shadow: none;
 }
+
 
 .about {
     display: flex;
@@ -244,6 +247,7 @@ span {
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+    align-items: center;
 }
 
 .education {
@@ -655,6 +659,11 @@ span {
   .about-content {
     max-width: 100%;
   }
+  .header .sticky {
+    border-bottom: 0.1rem solid rgb(0, 0, 0, 0.2);
+}
+
+  
 }
 
 
